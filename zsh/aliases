@@ -1,0 +1,34 @@
+# general
+alias a='ls -lrth'
+alias aliases='vim ~/.dotfiles/zsh/aliases'
+alias d='cd ~/.dotfiles'
+alias f='cd ~/Feedgen'
+alias s='screen -dr rails'
+alias sa='source ~/.dotfiles/zsh/aliases'
+alias e=mvim
+alias c=clear
+
+# git
+alias gi='git init .'
+alias ga='git add'
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gitdiff_assembla="git log --oneline master > MASTER_GIT.log && git log --oneline assembla/master > ASSEMBLA_GIT.log && diff MASTER_GIT.log ASSEMBLA_GIT.log"
+
+# RVM
+alias r=rvm
+
+# rails
+alias rs='rails s'
+alias rc='rails c'
+alias tlog='tail -f log/development.log'
+
+alias h=heroku
+

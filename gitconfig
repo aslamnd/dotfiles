@@ -1,0 +1,30 @@
+[user]
+	name = Aslam Najeebdeen
+	email = aslamnajeem@gmail.com
+[alias]
+  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[core]
+	editor = vim
+  excludesfile = ~/.gitignore
+[color]
+	ui = auto
+  diff = auto
+  branch = auto
+[color "diff"]
+  meta = yellow
+[apply]
+	whitespace = nowarn
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[help]
+	autocorrect = 1
+[branch]
+	autosetupmerge = true
+  autosetuprebase = always
+[push]
+	default = tracking
