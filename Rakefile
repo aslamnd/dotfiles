@@ -11,7 +11,7 @@ task :install do
       if replace_all
         replace_file(file)
       else
-        print "overwrite ~/.#{file} ? [ynaq]"
+        print "overwrite ~/.#{file} ? [ynaq]: "
         case $stdin.gets.chomp
         when 'a'
           replace_all = true
