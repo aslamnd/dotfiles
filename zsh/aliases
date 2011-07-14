@@ -12,6 +12,7 @@ alias e=mvim
 alias c=clear
 
 # git
+alias g='git'
 alias gi='git init .'
 alias ga='git add'
 alias gl='git pull'
