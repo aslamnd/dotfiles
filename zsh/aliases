@@ -10,6 +10,7 @@ alias s='screen -dr rails'
 alias sa='source ~/.dotfiles/zsh/aliases'
 alias e=mvim
 alias c=clear
+alias rr='rm -rf'
 
 # git
 alias g='git'
