@@ -8,6 +8,7 @@ alias pa="cd ~/Projects/Active/"
 alias pp="cd ~/Projects/Personal/"
 alias s='screen -dr rails'
 alias sa='source ~/.dotfiles/zsh/aliases'
+alias za='source ~/.dotfiles/zshrc'
 alias e=mvim
 alias c=clear
 alias rr='rm -rf'
