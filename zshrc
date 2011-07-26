@@ -26,5 +26,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 # export PATH="/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
+function new-github() {
+  git remote add origin git@github.com:$1/$2.git
+  git push -u origin master
+}
 
 [[ -s "/Users/aslam/.rvm/scripts/rvm" ]] && source "/Users/aslam/.rvm/scripts/rvm"  # This loads RVM into a shell session.
