@@ -1,7 +1,9 @@
 # general
 alias a='ls -lrth'
 alias aliases='vim ~/.dotfiles/zsh/aliases'
-alias d='cd ~/.dotfiles'
+alias gvimrc='vim ~/.vim/gvimrc'
+alias vimrc='vim ~/.vim/vimrc'
+alias cdd='cd ~/.dotfiles'
 alias f='cd ~/Feedgen'
 alias fa='cd ~/Feedgen/app/feedgen'
 alias pa="cd ~/Projects/Active/"
@@ -49,7 +51,13 @@ alias r=rvm
 # rails
 alias rs='rails s'
 alias rc='rails c'
+alias b='bundle'
+alias bi='bundle install'
+alias be='bundle exec'
+alias gi='gem install'
 alias tlog='tail -f log/development.log'
+alias migrate='rake db:migrate db:test:prepare'
+alias dbrest='rake db:reset'
 
 alias h=heroku
 
