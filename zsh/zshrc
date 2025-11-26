@@ -1,0 +1,36 @@
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+# Atuin (shell history)
+eval "$(atuin init zsh)"
+
+# zsh-autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Editor
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# Aliases - General
+alias a='ls -lrth'
+alias c='clear'
+alias e='nvim'
+alias cdd='cd ~/.dotfiles'
+
+# Aliases - Git
+alias g='git'
+alias gi='git init .'
+alias ga='git add'
+alias gl='git log'
+alias g1='git log --oneline'
+alias gpl='git pull'
+alias gph='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
