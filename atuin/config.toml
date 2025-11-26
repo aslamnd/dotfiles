@@ -1,0 +1,20 @@
+# Atuin configuration
+# https://docs.atuin.sh/configuration/config/
+
+# Search mode: prefix, fulltext, fuzzy, skim
+search_mode = "fuzzy"
+
+# Filter mode: global, host, session, directory
+filter_mode = "global"
+
+# Style: auto, full, compact
+style = "compact"
+
+# Show preview of command
+show_preview = true
+
+# Inline height (number of lines)
+inline_height = 20
+
+# Enable up arrow for search
+enter_accept = true

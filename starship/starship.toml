@@ -1,0 +1,48 @@
+# Starship prompt configuration
+# https://starship.rs/config/
+
+# Minimal two-line prompt like the screenshot
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$line_break\
+$character"""
+
+[directory]
+style = "blue"
+truncation_length = 3
+truncate_to_repo = false
+
+[character]
+success_symbol = "[❯](mauve)"
+error_symbol = "[❯](red)"
+
+[git_branch]
+symbol = " "
+style = "purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "yellow"
+format = "[$all_status$ahead_behind]($style)"
+
+# Disable modules we don't need
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[golang]
+disabled = true
