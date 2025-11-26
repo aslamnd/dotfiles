@@ -12,6 +12,9 @@ if ! command -v brew &> /dev/null; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Add fonts tap
+brew tap homebrew/cask-fonts
+
 # Install packages
 echo "Installing packages from Brewfile..."
 brew bundle --file="$DOTFILES_DIR/Brewfile"
