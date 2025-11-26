@@ -7,6 +7,9 @@ brew "starship"
 # Terminal
 cask "ghostty"
 
+# Fonts
+cask "font-jetbrains-mono-nerd-font"
+
 # Editor
 brew "neovim"
 
