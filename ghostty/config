@@ -6,4 +6,4 @@ window-decoration = true
 # Keybindings
 keybind = ctrl+d=new_split:right
 keybind = global:ctrl+alt+t=toggle_quick_terminal
-keybind = shift+enter=text
+keybind = shift+enter=text:\n
