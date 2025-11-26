@@ -1,6 +1,10 @@
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Completion settings
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # Starship prompt
 eval "$(starship init zsh)"
 
