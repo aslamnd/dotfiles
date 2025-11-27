@@ -15,6 +15,7 @@ error_symbol = "[❯](red)"
 style = "sapphire"
 
 [git_branch]
+symbol = " "
 style = "pink"
 
 [git_status]
