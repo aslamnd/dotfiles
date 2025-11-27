@@ -23,7 +23,7 @@ success_symbol = "[❯](mauve)"
 error_symbol = "[❯](red)"
 
 [git_branch]
-symbol = " "
+symbol = "󰘬 "
 style = "pink"
 format = "[$symbol$branch]($style) "
 

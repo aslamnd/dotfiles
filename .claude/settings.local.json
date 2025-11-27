@@ -7,7 +7,9 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(brew list:*)",
-      "Bash(fc-list:*)"
+      "Bash(fc-list:*)",
+      "Bash(cat:*)",
+      "Bash(xxd:*)"
     ],
     "deny": [],
     "ask": []
