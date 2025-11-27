@@ -11,6 +11,11 @@ setopt AUTO_CD              # cd into directory by typing its name
 setopt AUTO_PUSHD           # Push directories onto stack
 setopt PUSHD_IGNORE_DUPS    # Don't push duplicates
 
+# Clear screen before each prompt (keeps prompt at top, scrollback preserved)
+precmd() {
+  printf '\033[2J\033[3J\033[H'
+}
+
 # Starship prompt
 eval "$(starship init zsh)"
 
