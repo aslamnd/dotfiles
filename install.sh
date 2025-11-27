@@ -33,6 +33,10 @@ ln -sf "$DOTFILES_DIR/ghostty/config" ~/.config/ghostty/config
 mkdir -p ~/.config
 ln -sf "$DOTFILES_DIR/starship/starship.toml" ~/.config/starship.toml
 
+# Neovim - remove existing and symlink directory
+rm -rf ~/.config/nvim
+ln -sf "$DOTFILES_DIR/nvim" ~/.config/nvim
+
 echo ""
 echo "✓ Dotfiles installed successfully!"
 echo ""
