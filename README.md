@@ -9,7 +9,7 @@ My personal dotfiles for macOS.
 - **Atuin** - Magical shell history
 - **Ghostty** - Terminal configuration (Catppuccin Macchiato theme)
 - **Git** - Git configuration and aliases
-- **Neovim** - Editor
+- **Neovim** - Editor with LazyVim-based config (dashboard, LSP, file explorer, etc.)
 
 ## Installation
 
@@ -33,7 +33,8 @@ This will:
 ├── git/gitconfig       # → ~/.gitconfig
 ├── atuin/config.toml   # → ~/.config/atuin/config.toml
 ├── ghostty/config      # → ~/.config/ghostty/config
-└── starship/starship.toml # → ~/.config/starship.toml
+├── starship/starship.toml # → ~/.config/starship.toml
+└── nvim/               # → ~/.config/nvim
 ```
 
 ## Packages Installed
