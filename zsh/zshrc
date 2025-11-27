@@ -6,6 +6,11 @@ autoload -Uz compinit && compinit
 # Case-insensitive, partial-word, and substring completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+# ZSH options
+setopt AUTO_CD              # cd into directory by typing its name
+setopt AUTO_PUSHD           # Push directories onto stack
+setopt PUSHD_IGNORE_DUPS    # Don't push duplicates
+
 # Starship prompt
 eval "$(starship init zsh)"
 
