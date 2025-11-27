@@ -9,7 +9,8 @@
       "Bash(brew list:*)",
       "Bash(fc-list:*)",
       "Bash(cat:*)",
-      "Bash(xxd:*)"
+      "Bash(xxd:*)",
+      "Bash(printf:*)"
     ],
     "deny": [],
     "ask": []
