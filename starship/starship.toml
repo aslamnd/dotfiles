@@ -8,14 +8,14 @@ palette = "catppuccin_macchiato"
 add_newline = true
 
 [character]
-success_symbol = "[❯](mauve)"
-error_symbol = "[❯](red)"
+success_symbol = " "
+error_symbol = " "
 
 [directory]
 style = "sapphire"
 
 [git_branch]
-symbol = " "
+symbol = " "
 style = "pink"
 
 [git_status]
