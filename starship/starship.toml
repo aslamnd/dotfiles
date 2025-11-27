@@ -1,72 +1,28 @@
 # Starship prompt configuration
-# https://starship.rs/config/
 # Theme: Catppuccin Macchiato
+# Using mostly defaults - Starship is smart!
 
-# Catppuccin Macchiato palette
 palette = "catppuccin_macchiato"
 
-format = """
-$battery\
-$directory\
-$git_branch\
-$git_status\
-$line_break\
-$character"""
-
-[directory]
-style = "sapphire"
-truncation_length = 3
-truncate_to_repo = false
+# Two-line prompt
+add_newline = true
 
 [character]
 success_symbol = "[❯](mauve)"
 error_symbol = "[❯](red)"
 
+[directory]
+style = "sapphire"
+
 [git_branch]
-symbol = "󰘬 "
 style = "pink"
-format = "[$symbol$branch]($style) "
 
 [git_status]
 style = "yellow"
-format = "[$all_status$ahead_behind]($style) "
-conflicted = "="
-ahead = "⇡${count}"
-behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = "?"
-stashed = "$"
-modified = "!"
-staged = "+"
-renamed = "»"
-deleted = "✘"
-
-# Disable modules we don't need
-[package]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[python]
-disabled = true
-
-[ruby]
-disabled = true
-
-[rust]
-disabled = true
-
-[golang]
-disabled = true
 
 # Battery - only show when below 10%
 [battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = "🔋"
-unknown_symbol = ""
-empty_symbol = "🪫"
+disabled = false
 
 [[battery.display]]
 threshold = 10
