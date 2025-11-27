@@ -3,7 +3,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Completion settings
 autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# Case-insensitive, partial-word, and substring completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # Starship prompt
 eval "$(starship init zsh)"
