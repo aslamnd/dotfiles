@@ -43,7 +43,7 @@ eval "$(atuin init zsh)"
 eval "$(fnm env --use-on-cd)"
 
 # zoxide (smarter cd)
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # Editor
 export EDITOR="nvim"
