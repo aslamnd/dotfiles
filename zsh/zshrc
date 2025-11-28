@@ -38,6 +38,9 @@ eval "$(atuin init zsh)"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd)"
 
+# zoxide (smarter cd)
+eval "$(zoxide init zsh)"
+
 # Editor
 export EDITOR="nvim"
 export VISUAL="nvim"
