@@ -13,6 +13,7 @@ cask "font-jetbrains-mono-nerd-font"
 brew "neovim"
 
 # Development tools
+brew "fnm"
 brew "git"
 brew "ripgrep"
 brew "fd"
