@@ -37,6 +37,12 @@ ln -sf "$DOTFILES_DIR/starship/starship.toml" ~/.config/starship.toml
 rm -rf ~/.config/nvim
 ln -sf "$DOTFILES_DIR/nvim" ~/.config/nvim
 
+# Setup fnm and install Node.js LTS
+echo "Setting up Node.js..."
+eval "$(fnm env)"
+fnm install --lts
+fnm default lts-latest
+
 echo ""
 echo "✓ Dotfiles installed successfully!"
 echo ""
