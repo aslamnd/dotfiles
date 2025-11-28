@@ -15,6 +15,9 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
+# Keybindings
+bindkey '^f' autosuggest-accept    # Ctrl+F to accept autosuggestion
+
 # Completion settings
 autoload -Uz compinit && compinit
 # Case-insensitive, partial-word, and substring completion
