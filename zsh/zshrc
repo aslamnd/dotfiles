@@ -13,11 +13,16 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 
 # Completion settings
 autoload -Uz compinit && compinit
 # Case-insensitive, partial-word, and substring completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# Disable default menu, use fzf-tab instead
+zstyle ':completion:*' menu no
+# Preview directory contents when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # ZSH options
 setopt AUTO_CD              # cd into directory by typing its name
