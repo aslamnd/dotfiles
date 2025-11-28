@@ -1,6 +1,19 @@
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Zinit plugin manager
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
+
+# Zinit plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+
 # Completion settings
 autoload -Uz compinit && compinit
 # Case-insensitive, partial-word, and substring completion
@@ -16,9 +29,6 @@ eval "$(starship init zsh)"
 
 # Atuin (shell history)
 eval "$(atuin init zsh)"
-
-# zsh-autosuggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Editor
 export EDITOR="nvim"

@@ -1,7 +1,6 @@
 # Shell
 brew "zsh"
 brew "atuin"
-brew "zsh-autosuggestions"
 brew "starship"
 
 # Terminal
