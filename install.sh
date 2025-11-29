@@ -30,6 +30,9 @@ ln -sf "$DOTFILES_DIR/atuin/config.toml" ~/.config/atuin/config.toml
 mkdir -p ~/.config/ghostty
 ln -sf "$DOTFILES_DIR/ghostty/config" ~/.config/ghostty/config
 
+mkdir -p ~/.config/wezterm
+ln -sf "$DOTFILES_DIR/wezterm/wezterm.lua" ~/.config/wezterm/wezterm.lua
+
 mkdir -p ~/.config
 ln -sf "$DOTFILES_DIR/starship/starship.toml" ~/.config/starship.toml
 

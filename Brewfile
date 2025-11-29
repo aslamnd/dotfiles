@@ -5,6 +5,7 @@ brew "starship"
 
 # Terminal
 cask "ghostty"
+cask "wezterm"
 
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
