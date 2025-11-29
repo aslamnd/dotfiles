@@ -7,7 +7,8 @@ My personal dotfiles for macOS.
 - **ZSH** - Shell configuration with aliases
 - **Starship** - Minimal, fast prompt
 - **Atuin** - Magical shell history
-- **Ghostty** - Terminal configuration (Catppuccin Macchiato theme)
+- **WezTerm** - Terminal configuration (Catppuccin Macchiato theme)
+- **Ghostty** - Alternative terminal configuration (Catppuccin Macchiato theme)
 - **Git** - Git configuration and aliases
 - **Neovim** - Editor with LazyVim-based config (dashboard, LSP, file explorer, etc.)
 
@@ -32,6 +33,7 @@ This will:
 ├── zsh/zshrc           # → ~/.zshrc
 ├── git/gitconfig       # → ~/.gitconfig
 ├── atuin/config.toml   # → ~/.config/atuin/config.toml
+├── wezterm/wezterm.lua # → ~/.config/wezterm/wezterm.lua
 ├── ghostty/config      # → ~/.config/ghostty/config
 ├── starship/starship.toml # → ~/.config/starship.toml
 └── nvim/               # → ~/.config/nvim
@@ -41,7 +43,7 @@ This will:
 
 ### Shell & Terminal
 - zsh, atuin, zsh-autosuggestions, starship
-- ghostty
+- wezterm, ghostty
 
 ### Editor
 - neovim
@@ -117,6 +119,15 @@ Press `Esc` to enter normal mode, then use vim motions:
 | `gpl` | `git pull` | Pull |
 | `gph` | `git push` | Push |
 
+### WezTerm Terminal
+
+| Key | Action |
+|-----|--------|
+| `Cmd+D` | Split pane horizontal |
+| `Cmd+Shift+D` | Split pane vertical |
+| `Cmd+W` | Close current pane |
+| `Cmd+K` | Clear screen |
+
 ### Ghostty Terminal
 
 | Key | Action |
@@ -125,3 +136,7 @@ Press `Esc` to enter normal mode, then use vim motions:
 | `Ctrl+Alt+T` | Toggle quick terminal (global) |
 | `Shift+Enter` | Insert newline |
 | `Cmd+K` | Clear screen |
+
+## TODO
+
+- [ ] Remove Ghostty config once fully migrated to WezTerm
