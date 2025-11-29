@@ -64,6 +64,7 @@ alias a='eza -la --icons --sort=modified'
 alias c='clear'
 alias e='nvim'
 alias cdd='cd ~/.dotfiles'
+alias cat='bat'
 
 # Aliases - Git
 alias g='git'
