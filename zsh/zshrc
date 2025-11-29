@@ -50,8 +50,8 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # Aliases - eza (modern ls)
-alias ls='eza --icons'
-alias l='eza -la --icons'
+alias l='eza --icons'
+alias ll='eza -la --icons'
 alias la='eza -la --icons'
 alias lt='eza --tree --icons'
 alias lg='eza -la --git --icons'
