@@ -49,8 +49,15 @@ eval "$(zoxide init --cmd cd zsh)"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+# Aliases - eza (modern ls)
+alias ls='eza --icons'
+alias l='eza -la --icons'
+alias la='eza -la --icons'
+alias lt='eza --tree --icons'
+alias lg='eza -la --git --icons'
+
 # Aliases - General
-alias a='ls -lrth'
+alias a='eza -la --icons --sort=modified'
 alias c='clear'
 alias e='nvim'
 alias cdd='cd ~/.dotfiles'
