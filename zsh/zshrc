@@ -17,8 +17,10 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light jeffreytse/zsh-vi-mode
 
-# Keybindings
-bindkey '^y' autosuggest-accept    # Ctrl+Y to accept autosuggestion
+# Keybindings (using zvm hook to set after vi-mode loads)
+function zvm_after_init() {
+  bindkey '^ ' autosuggest-accept    # Ctrl+Space to accept autosuggestion
+}
 
 # Completion settings
 autoload -Uz compinit && compinit
