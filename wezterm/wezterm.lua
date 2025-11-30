@@ -48,6 +48,11 @@ config.keys = {
 		mods = "CMD",
 		action = wezterm.action.SendString("clear\n"),
 	},
+	{
+		key = "Enter",
+		mods = "SHIFT",
+		action = wezterm.action.SendString("\n"),
+	},
 }
 
 -- Misc
