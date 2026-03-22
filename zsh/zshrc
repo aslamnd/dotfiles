@@ -80,3 +80,14 @@ alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
+
+# Added Claude skip permission 
+alias clauded="claude --dangerously-skip-permissions"
+alias claudecd="claude -c --dangerously-skip-permissions"
+
+
+# Added by Antigravity
+export PATH="/Users/aslam/.antigravity/antigravity/bin:$PATH"
+
+# opencode
+export PATH=/Users/aslam/.opencode/bin:$PATH
