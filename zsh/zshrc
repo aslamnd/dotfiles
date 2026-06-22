@@ -45,9 +45,6 @@ eval "$(atuin init zsh)"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd)"
 
-# zoxide (smarter cd)
-eval "$(zoxide init --cmd cd zsh)"
-
 # Editor
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -91,3 +88,12 @@ export PATH="/Users/aslam/.antigravity/antigravity/bin:$PATH"
 
 # opencode
 export PATH=/Users/aslam/.opencode/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+[[ ":$PATH:" != *":$HOME/.config/kaku/zsh/bin:"* ]] && export PATH="$HOME/.config/kaku/zsh/bin:$PATH" # Kaku PATH Integration
+[[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh" # Kaku Shell Integration
+export PATH="/opt/homebrew/bin:$PATH"
+alias pip="pip3"
+
+# zoxide (smarter cd) — must be initialized at the very end
+eval "$(zoxide init --cmd cd zsh)"
