@@ -95,5 +95,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 alias pip="pip3"
 
-# zoxide (smarter cd) — must be initialized at the very end
+# zoxide (smarter cd) — must be initialized at the very end.
+# Silence the doctor: zoxide is already last here, but lazily-loaded plugins
+# (zsh-vi-mode, fnm, atuin) can register hooks after it in non-interactive
+# shells, triggering a false-positive "configuration issue" warning.
+export _ZO_DOCTOR=0
 eval "$(zoxide init --cmd cd zsh)"
